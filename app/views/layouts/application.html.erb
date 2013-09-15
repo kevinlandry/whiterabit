@@ -7,11 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 	<body>
-		<%= link_to"Welcome" ,"/" %>
-		<%= link_to"About" ,"/about" %>
-		<%= link_to"extra" ,"" %>
-		<%= link_to"extra" ,"" %>
-	<%= yield %>
+		<div class="container">
+			<div class="page-header">
+  		<ul class="nav nav-pills pull-right">
+				<li>
+					<%= link_to"Welcome" ,"/" %>
+						<li>
+						<%= link_to"About" ,"/about" %>
+						<li>
+						<%= link_to"extra" ,"" %>
+						<li>	
+					<%= link_to"extra" ,"" %>
+				<li>
+			</ul>	
+				<h1><%= link_to "white rabit" , "/" %><small> // social development platform</small></h1>
+				</div>
+		<%= yield %>
+		</div>
 
 	</body>
 </html>
